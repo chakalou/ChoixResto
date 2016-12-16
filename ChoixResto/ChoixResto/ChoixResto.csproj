@@ -105,6 +105,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BddContext.cs" />
+    <Compile Include="Models\Dal.cs" />
+    <Compile Include="Models\IDal.cs" />
     <Compile Include="Models\Resto.cs" />
     <Compile Include="Models\Sondage.cs" />
     <Compile Include="Models\Utilisateur.cs" />
