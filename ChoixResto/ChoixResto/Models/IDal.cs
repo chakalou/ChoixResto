@@ -16,8 +16,16 @@ namespace ChoixResto.Models
 
         /*Utilisateur*/
         Utilisateur ObtenirUtilisateur(int id);
-        Utilisateur ObtenirUtilisateur(string nom);
+        Utilisateur ObtenirUtilisateur(string idStr);
         int AjouterUtilisateur(string nom, string motdepasse);
         Utilisateur Authentifier(string nom, string motdepasse);
+
+        void AjouterVote(int idSondage, int idResto, int idUtilisateur);
+
+        int CreerUnSondage();
+
+        List<Resultats> ObtenirLesResultats(int idSondage);
+
+        bool ADejaVote(int idSondage, string idStr);
     }
 }

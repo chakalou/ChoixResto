@@ -12,6 +12,6 @@ namespace ChoixResto.Models
         [Required, MaxLength(80)]
         public string Prenom { get; set; }
         [Required, MaxLength(80)]
-        public string motdepass { get; set; }
+        public string MotDePasse { get; set; }
     }
 }
