@@ -1,0 +1,22 @@
+﻿
+@model ChoixResto.ViewModels.AccueilViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <li>@Model.Message</li>
+        <li>@Model.Date.ToString("dd/MM/yyyy")</li>
+        <li>@Model.Resto.Nom</li>
+        <li>@Model.Resto.Telephone</li>
+    </div>
+</body>
+</html>

@@ -57,7 +57,7 @@ namespace ChoixResto.Models
         public int CreerUnSondage()
         {
             Sondage sondage = new Sondage();
-            sondage.Date = DateTime.Today;
+            sondage.Date = DateTime.Now;
             sondage.Votes = new List<Vote>();
             int count = bdd.Sondages.Count();
             bdd.Sondages.Add(sondage);
